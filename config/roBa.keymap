@@ -26,24 +26,19 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-
         single_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <19 20>;
+        };
+
+        backquote {
+            bindings = <&kp GRAVE>;
+            key-positions = <18 19>;
         };
     };
 
@@ -72,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R                &kp T                                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A           &kp S         &kp D         &kp F                &kp G         &none                     &mt RIGHT_SHIFT SINGLE_QUOTE  &kp H        &kp J  &kp K      &kp L    &lt 4 SEMICOLON
-&kp Z           &kp X         &kp C         &kp V                &kp B         &kp LEFT_SHIFT            &kp BACKSPACE                 &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &lt 6 ESCAPE  &mt LEFT_META COLON  &lt 1 ESCAPE  &mt LEFT_SHIFT SPACE      &mt RIGHT_CONTROL BACKSPACE   &lt 2 ENTER                             &mt RIGHT_ALT TAB
+&kp Q           &kp W               &kp E         &kp R                &kp T                                                                &kp Y        &kp U  &lt 5 I    &kp O            &kp P
+&kp A           &kp S               &kp D         &kp F                &kp G         &none                     &none                        &kp H        &kp J  &kp K      &mt RIGHT_ALT L  &lt 4 SEMICOLON
+&kp Z           &kp X               &kp C         &kp V                &kp B         &none                     &none                        &kp N        &kp M  &kp COMMA  &kp DOT          &kp SLASH
+&kp LEFT_SHIFT  &to_layer_0 ESCAPE  &lt 6 ESCAPE  &mt LEFT_META COLON  &lt 1 ESCAPE  &mt LEFT_SHIFT SPACE      &mt RIGHT_CONTROL BACKSPACE  &lt 2 ENTER                                     &mt RIGHT_ALT TAB
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -92,10 +87,10 @@
 
         SIGN {
             bindings = <
-&kp EXCLAMATION             &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT                                           &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp GRAVE  &kp MINUS       &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp PIPE
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp TILDE  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans     &trans                                                                 &kp PIPE
+&kp EXCLAMATION  &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT                       &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp GRAVE        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &none       &none   &kp MINUS       &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp PIPE
+&kp TILDE        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &none       &none   &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH
+&trans           &trans           &trans           &trans           &trans        &trans      &trans  &trans                                                                 &kp PIPE
             >;
         };
 
