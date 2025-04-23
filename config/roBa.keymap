@@ -87,10 +87,10 @@
 
         SIGN {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN      &kp HASH         &kp DOLLAR       &kp PERCENT                       &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp GRAVE        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &none       &none   &kp MINUS       &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp PIPE
-&kp TILDE        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &none       &none   &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH
-&trans           &trans           &trans           &trans           &trans        &trans      &trans  &trans                                                                 &kp PIPE
+&kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR  &kp PERCENT                      &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp GRAVE        &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans      &trans       &trans      &trans  &kp MINUS       &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE       &kp PIPE
+&kp TILDE        &trans            &trans             &trans      &trans       &trans      &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH
+&trans           &trans            &trans             &trans      &trans       &trans      &trans  &trans                                                                 &kp PIPE
             >;
         };
 
